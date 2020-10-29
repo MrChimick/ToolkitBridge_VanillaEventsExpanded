@@ -6,7 +6,7 @@ using VEE;
 
 namespace ToolkitBridge_VanillaEventsExpanded
 {
-    public class IncidentBridge_HailStorm : IncidentHelper
+    public class IncidentBridge_Drought : IncidentHelper
     {
         private IncidentParms parms;
         private IncidentWorker worker;
@@ -14,7 +14,7 @@ namespace ToolkitBridge_VanillaEventsExpanded
         public override bool IsPossible()
         {
             this.worker = (IncidentWorker) new IncidentWorker_MakeGameConditionVEE();
-            this.worker.def = IncidentDef.Named("VEE_HailStorm");
+            this.worker.def = IncidentDef.Named("VEE_Drought");
             this.parms = new IncidentParms();
             List<Map> maps = Current.Game.Maps;
             ((IList<Map>) maps).Shuffle<Map>();

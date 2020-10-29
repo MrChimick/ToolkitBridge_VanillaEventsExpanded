@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using Verse;
 using TwitchToolkit.Store;
-using VEE;
+using VEE.RegularEvents;
 
 namespace ToolkitBridge_VanillaEventsExpanded
 {
-    public class IncidentBridge_HailStorm : IncidentHelper
+    public class IncidentBridge_HuntingParty : IncidentHelper
     {
         private IncidentParms parms;
         private IncidentWorker worker;
         
         public override bool IsPossible()
         {
-            this.worker = (IncidentWorker) new IncidentWorker_MakeGameConditionVEE();
-            this.worker.def = IncidentDef.Named("VEE_HailStorm");
+            this.worker = (IncidentWorker) new HuntingParty();
+            this.worker.def = IncidentDef.Named("VEE_HuntingParty");
             this.parms = new IncidentParms();
             List<Map> maps = Current.Game.Maps;
             ((IList<Map>) maps).Shuffle<Map>();

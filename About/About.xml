@@ -4,7 +4,6 @@
 	<name>Toolkit Bridge - Vanilla Events Expanded</name>
 	<author>mr_chimick</author>
 	<supportedVersions>
-		<li>1.1</li>
 		<li>1.2</li>
 	</supportedVersions>
 	<modDependencies>
@@ -19,6 +18,6 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/1938420742</steamWorkshopUrl>
 		</li>
 	</modDependencies>
-    <description><![CDATA[This mod bridges several events from Vanilla Events Expanded v1.1 into twitch toolkit.]]>
+    <description><![CDATA[This mod bridges several events from Vanilla Events Expanded into twitch toolkit.]]>
     </description>
 </ModMetaData>

@@ -1,31 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <IncidentDef>
-        <defName>TB_VEE_HailStorm</defName>
-        <label>hail storm</label>
-        <category>Misc</category>
-        <targetTags>
-            <li>Map_PlayerHome</li>
-        </targetTags>
-        <workerClass>ToolkitBridge_VanillaEventsExpanded.IncidentWorker_VEE</workerClass>
-        <gameCondition>HailStorm</gameCondition>
-        <letterLabel>Hail Storm</letterLabel>
-        <letterText>A freak, small scale hail storm is ravaging the local area. Any person or creature not hiding under the roof risks getting injured by ice pellets.</letterText>
-        <letterDef>NegativeEvent</letterDef>
-        <baseChance>0.15</baseChance>
-        <minRefireDays>40</minRefireDays>
-        <durationDays>
-            <min>0.6</min>
-            <max>1.5</max>
-        </durationDays>
-    </IncidentDef>
     <TwitchToolkit.Incidents.StoreIncidentSimple>
-        <defName>TB_VEE_HailStorm</defName>
+        <defName>VEE_HailStorm</defName>
         <label>hail storm</label>
         <abbreviation>hailstorm</abbreviation>
         <cost>1000</cost>
         <eventCap>5</eventCap>
         <incidentHelper>ToolkitBridge_VanillaEventsExpanded.IncidentBridge_HailStorm</incidentHelper>
         <karmaType>Bad</karmaType>
+    </TwitchToolkit.Incidents.StoreIncidentSimple>
+    
+    <TwitchToolkit.Incidents.StoreIncidentSimple>
+        <defName>VEE_Earthquake</defName>
+        <label>earthquake</label>
+        <abbreviation>earthquake</abbreviation>
+        <cost>1000</cost>
+        <eventCap>5</eventCap>
+        <incidentHelper>ToolkitBridge_VanillaEventsExpanded.IncidentBridge_Earthquake</incidentHelper>
+        <karmaType>Bad</karmaType>
+    </TwitchToolkit.Incidents.StoreIncidentSimple>
+
+    <TwitchToolkit.Incidents.StoreIncidentSimple>
+        <defName>VEE_CropSprout</defName>
+        <label>crop sprout</label>
+        <abbreviation>cropsprout</abbreviation>
+        <cost>1000</cost>
+        <eventCap>5</eventCap>
+        <incidentHelper>ToolkitBridge_VanillaEventsExpanded.IncidentBridge_Cropsprout</incidentHelper>
+        <karmaType>Good</karmaType>
+    </TwitchToolkit.Incidents.StoreIncidentSimple>
+
+    <TwitchToolkit.Incidents.StoreIncidentSimple>
+        <defName>VEE_Drought</defName>
+        <label>drought</label>
+        <abbreviation>drought</abbreviation>
+        <cost>1000</cost>
+        <eventCap>5</eventCap>
+        <incidentHelper>ToolkitBridge_VanillaEventsExpanded.IncidentBridge_Drought</incidentHelper>
+        <karmaType>Bad</karmaType>
+    </TwitchToolkit.Incidents.StoreIncidentSimple>
+
+    <TwitchToolkit.Incidents.StoreIncidentSimple>
+        <defName>VEE_HuntingParty</defName>
+        <label>hunting party</label>
+        <abbreviation>huntingparty</abbreviation>
+        <cost>1000</cost>
+        <eventCap>5</eventCap>
+        <incidentHelper>ToolkitBridge_VanillaEventsExpanded.IncidentBridge_HuntingParty</incidentHelper>
+        <karmaType>Neutral</karmaType>
     </TwitchToolkit.Incidents.StoreIncidentSimple>
 </Defs>
