@@ -4,8 +4,8 @@
         <defName>VEE_HailStorm</defName>
         <label>hail storm</label>
         <abbreviation>hailstorm</abbreviation>
-        <cost>1000</cost>
-        <eventCap>5</eventCap>
+        <cost>2500</cost>
+        <eventCap>2</eventCap>
         <incidentHelper>ToolkitBridge_VanillaEventsExpanded.IncidentBridge_HailStorm</incidentHelper>
         <karmaType>Bad</karmaType>
     </TwitchToolkit.Incidents.StoreIncidentSimple>
@@ -14,8 +14,8 @@
         <defName>VEE_Earthquake</defName>
         <label>earthquake</label>
         <abbreviation>earthquake</abbreviation>
-        <cost>1000</cost>
-        <eventCap>5</eventCap>
+        <cost>2000</cost>
+        <eventCap>2</eventCap>
         <incidentHelper>ToolkitBridge_VanillaEventsExpanded.IncidentBridge_Earthquake</incidentHelper>
         <karmaType>Bad</karmaType>
     </TwitchToolkit.Incidents.StoreIncidentSimple>
@@ -24,7 +24,7 @@
         <defName>VEE_CropSprout</defName>
         <label>crop sprout</label>
         <abbreviation>cropsprout</abbreviation>
-        <cost>1000</cost>
+        <cost>2000</cost>
         <eventCap>5</eventCap>
         <incidentHelper>ToolkitBridge_VanillaEventsExpanded.IncidentBridge_Cropsprout</incidentHelper>
         <karmaType>Good</karmaType>
@@ -34,8 +34,8 @@
         <defName>VEE_Drought</defName>
         <label>drought</label>
         <abbreviation>drought</abbreviation>
-        <cost>1000</cost>
-        <eventCap>5</eventCap>
+        <cost>3000</cost>
+        <eventCap>1</eventCap>
         <incidentHelper>ToolkitBridge_VanillaEventsExpanded.IncidentBridge_Drought</incidentHelper>
         <karmaType>Bad</karmaType>
     </TwitchToolkit.Incidents.StoreIncidentSimple>
@@ -44,7 +44,7 @@
         <defName>VEE_HuntingParty</defName>
         <label>hunting party</label>
         <abbreviation>huntingparty</abbreviation>
-        <cost>1000</cost>
+        <cost>500</cost>
         <eventCap>5</eventCap>
         <incidentHelper>ToolkitBridge_VanillaEventsExpanded.IncidentBridge_HuntingParty</incidentHelper>
         <karmaType>Neutral</karmaType>

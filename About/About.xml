@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<packageId>MrChimick.ToolkitBridge_VanillaEventsExpanded</packageId>
-	<name>Toolkit Bridge - Vanilla Events Expanded</name>
+	<packageId>MrChimick.ToolkitBridge.VanillaEventsExpanded</packageId>
+	<name>TwitchToolkit Bridge - Vanilla Events Expanded</name>
 	<author>mr_chimick</author>
 	<supportedVersions>
 		<li>1.2</li>

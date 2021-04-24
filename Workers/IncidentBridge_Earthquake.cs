@@ -1,8 +1,8 @@
-﻿using RimWorld;
-using System.Collections.Generic;
-using Verse;
+﻿using System.Collections.Generic;
+using RimWorld;
 using TwitchToolkit.Store;
 using VEE.RegularEvents;
+using Verse;
 
 namespace ToolkitBridge_VanillaEventsExpanded
 {
@@ -13,22 +13,13 @@ namespace ToolkitBridge_VanillaEventsExpanded
         
         public override bool IsPossible()
         {
-            this.worker = (IncidentWorker) new EarthQuake();
-            this.worker.def = IncidentDef.Named("VEE_Earthquake");
-            this.parms = new IncidentParms();
-            List<Map> maps = Current.Game.Maps;
-            ((IList<Map>) maps).Shuffle<Map>();
-            using (List<Map>.Enumerator enumerator = maps.GetEnumerator())
-            {
-                while (enumerator.MoveNext())
-                {
-                    this.parms.target = enumerator.Current;
-                    if (this.worker.CanFireNow(this.parms, false)) return true;
-                }
-            }
-            return false;
+            worker = new EarthQuake();
+            worker.def = IncidentDef.Named("VEE_Earthquake");
+            parms = new IncidentParms();
+            parms.target = Current.Game.RandomPlayerHomeMap;
+            return (worker.CanFireNow(parms));
         }
 
-        public override void TryExecute() => this.worker.TryExecute(this.parms);
+        public override void TryExecute() => worker.TryExecute(parms);
     }
 }

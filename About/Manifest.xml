@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
-    <identifier>ToolkitBridge_VanillaEventsExpanded</identifier>
-    <version>1.1</version>
+    <identifier>ToolkitBridge.VanillaEventsExpanded</identifier>
+    <version>1.2</version>
     <manifestUri>https://github.com/MrChimick/ToolkitBridge_VanillaEventsExpanded/raw/master/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/MrChimick/ToolkitBridge_VanillaEventsExpanded/releases/latest</downloadUri>
 </Manifest>
